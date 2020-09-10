@@ -9,7 +9,7 @@ In this lab, you learn how to perform the following tasks:
 - Deploy an App Engine application, so that others can reach it.
 - Disable an App Engine application, when you no longer want it to be visible.
 ***
-##Steps
+## Steps
 1.  Initialize App Engine
     1. Initialize your App Engine app with your project and choose its region:
      `gcloud app create --project=$DEVSHELL_PROJECT_ID`
@@ -52,6 +52,7 @@ In this lab, you learn how to perform the following tasks:
     5.  Copy and paste the URL into a new browser window.
         Result:
         ![Preview of successful deployment](https://cdn.qwiklabs.com/fnmJeOzuz%2BgxMdMg175OIbQRE84kwir5fKVcB1kXihg%3D)
+        ***
 
 4.  Disable the application
 
