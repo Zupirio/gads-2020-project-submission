@@ -15,8 +15,8 @@ In this lab, you will learn how to perform the following tasks:
 ## Steps
 1. Creating a Compute Engine Virtual Machine Instance
     >`gcloud beta compute --project=qwiklabs-gcp-03-751c773f90b1 instances create dev-instance --zone=us-central1-a --machine-type=e2-medium --subnet=default --network-tier=PREMIUM --maintenance-policy=MIGRATE --service-account=466896154539-compute@developer.gserviceaccount.com --scopes=https://www.googleapis.com/auth/cloud-platform --tags=http-server --image=debian-10-buster-v20200902 --image-project=debian-cloud --boot-disk-size=10GB --boot-disk-type=pd-standard --boot-disk-device-name=dev-instance --no-shielded-secure-boot --no-shielded-vtpm --no-shielded-integrity-monitoring --reservation-affinity=any
-    `
-    <br>
+    `  
+
     >`gcloud compute --project=qwiklabs-gcp-03-751c773f90b1 firewall-rules create default-allow-http --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=tcp:80 --source-ranges=0.0.0.0/0 --target-tags=http-server
     `
     <br>
@@ -51,7 +51,3 @@ In this lab, you will learn how to perform the following tasks:
      `npm install`
     8. To run a simple Node.js application that lists Compute Engine instances, execute the following command:  
      `node list-gce-instances.js`
-    9. 
-    
-
-
