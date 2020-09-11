@@ -32,7 +32,7 @@ In this lab, you learn how to perform the following tasks:
         `pip install  -r requirements.txt`
     6.  Run the application:
         `python main.py`
-    7.  **In Cloud Shell, click Web preview (Web Preview) > Preview on port 8080 to preview the application.**
+    7.  Open VM IP in browser window.
     8.  To end the test, return to Cloud Shell and press Ctrl+C to abort the deployed service.
      `sudo apt-get update`
 
@@ -55,4 +55,5 @@ In this lab, you learn how to perform the following tasks:
         ***
 
 4.  Disable the application
+    `gcloud app versions stop`
 
