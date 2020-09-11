@@ -43,7 +43,11 @@ In this lab, you will learn how to perform the following tasks:
      `cd ~/training-data-analyst/courses/developingapps/nodejs/devenv/`
     4. To run a simple web server, execute the following command:  
      `sudo node server/app.js`
-    5. **Return to the Cloud Console VM instances list, and click on the External IP address for the dev-instance.**<br> 
+    5. In the VM instance list, choose the external IP address for the dev instance.
+        `gcloud compute instances list`
+        `gcloud compute instances describe my-instance --format='get(networkInterfaces[0].accessConfigs[0].natIP)'`  
+        >Then put the link in your browser like this ``http://<IP-EXTERNAL-VM>``
+        
         >You should see a Hello GCP dev! message from Node.js.
 
     6. Return to the SSH window, and stop the application by pressing Ctrl+C.  
